@@ -1,0 +1,69 @@
+// SPDX-License-Identifier: Apache-2.0
+// SPDX-FileCopyrightText: 2025 Laminar Contributors
+
+= Changelog
+:toc:
+
+All notable changes to Laminar will be documented in this file.
+
+The format is based on https://keepachangelog.com/en/1.1.0/[Keep a Changelog],
+and this project adheres to https://semver.org/spec/v2.0.0.html[Semantic Versioning].
+
+== [Unreleased]
+
+=== Added
+- Placeholder for upcoming features
+
+== [1.0.0] - 2025-11-27
+
+=== Added
+
+==== Core Features
+- Cloud-to-cloud streaming relay architecture
+- Zero-persistence data transfer (RAM + NVMe caching)
+- Parallel streaming with 32+ concurrent transfers
+- Multi-thread streams for large files (BitTorrent-style logic)
+
+==== Intelligence Engine
+- Pattern-matching rule system for file decisions
+- Automatic filtering of build artifacts (node_modules, _build, target)
+- OS junk removal (.DS_Store, Thumbs.db)
+- Ghost Links for files > 5GB
+- Format conversion support (WAV→FLAC, BMP→WebP)
+- Compression for large text files (Zstd)
+
+==== Control Plane (Elixir)
+- GraphQL API with Absinthe
+- Real-time subscriptions for transfer progress
+- REST API fallback endpoints
+- Broadway-based 4-lane processing pipeline
+
+==== Data Plane (Rclone)
+- Integration with 40+ cloud providers
+- Rclone RC API client
+- Checksum verification
+- Resume capability via checkpoint caching
+
+==== Infrastructure
+- Podman containers with Chainguard Wolfi base
+- Network physics optimization (TCP BBR, GRO/LRO tuning)
+- Tiered storage (RAM Tier 1, NVMe Tier 2)
+- Oil Shell installer script
+
+==== Documentation
+- Comprehensive wiki with user and developer guides
+- AsciiDoc format throughout
+- CLAUDE.adoc for AI-assisted development
+- Cookbook with tuning recipes
+
+=== Security
+- Non-root container execution
+- Credentials never in container images
+- TLS for all cloud connections
+- eDNS for CDN optimization
+
+== [0.1.0] - 2025-11-27
+
+=== Added
+- Initial project structure
+- Proof of concept implementation

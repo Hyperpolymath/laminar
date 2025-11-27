@@ -1,0 +1,39 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2025 Laminar Contributors
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Elixir
+*.ex text diff=elixir
+*.exs text diff=elixir
+
+# Documentation
+*.adoc text
+*.md text
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.osh text eol=lf
+
+# Configuration
+*.json text
+*.yaml text
+*.yml text
+*.toml text
+
+# Container files
+Containerfile text eol=lf
+Dockerfile text eol=lf
+
+# Justfile
+.justfile text eol=lf
+Justfile text eol=lf
+
+# Ensure these stay binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.pdf binary

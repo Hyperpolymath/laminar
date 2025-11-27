@@ -1,0 +1,78 @@
+// SPDX-License-Identifier: Apache-2.0
+// SPDX-FileCopyrightText: 2025 Laminar Contributors
+
+= Roadmap
+:toc:
+
+This document outlines planned features and improvements for Laminar.
+
+== Version 1.1 (Next)
+
+=== Transfer Profiles
+- [ ] Named transfer profiles in config
+- [ ] Profile selection via CLI and API
+- [ ] Profile templates for common scenarios
+
+=== Enhanced Monitoring
+- [ ] Prometheus metrics endpoint
+- [ ] Grafana dashboard templates
+- [ ] Transfer history persistence
+
+=== UI Improvements
+- [ ] Web dashboard (React/Svelte)
+- [ ] Real-time transfer visualization
+- [ ] Remote browser integration
+
+== Version 1.2
+
+=== Plugin Architecture
+- [ ] Dynamic analyzer loading
+- [ ] Custom converter plugins
+- [ ] Third-party integration hooks
+
+=== Advanced Intelligence
+- [ ] Machine learning file classification
+- [ ] Adaptive compression selection
+- [ ] Smart scheduling based on patterns
+
+=== Multi-Instance
+- [ ] Distributed relay coordination
+- [ ] Load balancing across instances
+- [ ] Shared job queue (Redis/PostgreSQL)
+
+== Version 2.0
+
+=== Content-Addressable Storage
+- [ ] Deduplication via content hashing
+- [ ] Block-level chunking
+- [ ] Cross-transfer dedup
+
+=== Advanced Security
+- [ ] End-to-end encryption
+- [ ] Key management integration (Vault)
+- [ ] Audit logging
+
+=== Enterprise Features
+- [ ] LDAP/SAML authentication
+- [ ] Role-based access control
+- [ ] Multi-tenant support
+
+== Considered (No Timeline)
+
+=== IPFS Integration
+- Investigate IPFS as storage backend
+- Content-addressable streaming
+
+=== Blockchain Verification
+- Transfer receipts on chain
+- Immutable audit trail
+
+=== Mobile Support
+- iOS/Android client apps
+- Mobile-optimized transfers
+
+== Contributing
+
+Want to help with any of these features? See link:CONTRIBUTING.adoc[Contributing Guide].
+
+Feature requests and votes welcome via GitHub Issues.
